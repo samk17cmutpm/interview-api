@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @boat.name %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <img src= <%= @boat.image %> alt="Smiley face" height="200" width="200">
+  <!-- <%= @boat.image %> -->
+</p>
+
+<%= link_to 'Edit', edit_boat_path(@boat) %> |
+<%= link_to 'Back', boats_path %>
